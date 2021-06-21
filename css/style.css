@@ -1,0 +1,207 @@
+/* latin-ext */
+@font-face {
+    font-family: 'Ropa Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/ropasans/v10/EYqxmaNOzLlWtsZSScy6UzNpY5I.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Ropa Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/ropasans/v10/EYqxmaNOzLlWtsZSScy6XTNp.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Ropa Sans', sans-serif;
+    color: #333;
+    position: relative;
+  }
+  main{ 
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 30px; 
+    padding-bottom: 30px;
+  }
+  img{
+    max-width: 100%;
+  }
+  ul{
+    margin: 0;
+    padding: 0;
+  }
+  ul li{
+    display: block;
+    list-style: none;
+  }
+  #githubLink {
+    position: absolute;
+    right: 0;
+    top: 12px;
+    color: #2D99FF;
+  }
+
+
+  #loadingMessage {
+    text-align: center;
+    padding: 40px;
+    background-color: #eee;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 20px 0px;
+}
+  #canvas {
+    width: 100%;
+    height:40%; 
+  }
+
+  #output {
+    /*margin-top: 20px;*/
+    background: #eee;
+    padding: 10px;
+    font-size:200%;
+    padding-bottom: 0;
+  }
+
+  #output div {
+    padding-bottom: 10px;
+    word-wrap: break-word;
+  }
+
+  #noQRFound {
+    text-align: center;
+  }
+  
+  .videoOut{
+      background-color:#FF0000;
+      float:left;
+      width:100%;
+      height:100px;
+  }
+  #outputMessage {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: capitalize;
+    margin: 30px 0;
+}
+  #ticketResult {
+    background-color: #CCCCCC;
+    text-align: center;
+    padding: 40px;
+    padding-top: 50px;
+  }
+  #outputData{
+  font-weight:bold;
+  }
+  h1 {
+      padding:0px;
+      margin:0px;
+      font-size:300%;
+  }
+  h2{
+    font-size:200%;
+      margin:0px;
+      padding:10px;
+      border:0px;
+  }
+  h3{
+    font-size:150%;
+    font-weight:bold;
+      padding:10px;
+      margin:0px;
+  }	
+  hr{
+      border:0px;
+  }
+  button{
+      font-size:150%;
+      width:100%;
+      background-color:#FFFF00;
+  }
+  #eventInfo{
+      text-align:center;
+      width:100%;
+      background-color:#FFC71F;
+      font-weight:bold;
+      font-size:200%;		
+  }
+  img.logo{
+    height:100px;
+    margin-right: 80px;
+  }
+  .header h1 {
+    font-size: 38px;
+    margin: 0;
+    margin-bottom: -15px;
+}
+  div#ticketResult ul {
+    text-align: left;
+    max-width: 75%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  div#ticketResult ul li {
+      display: block;
+      margin-bottom: 25px;
+      font-size: 24px;
+  }
+  #ticketResult button {
+    font-size: 26px;
+    padding: 10px 40px;
+    width: max-content;
+    cursor: pointer;
+  }
+
+
+@media screen and (max-width:768px) {
+  main { 
+    padding: 0 15px;
+  } 
+  .header {
+    display: block;
+    text-align: center; 
+    padding: 20px 0px;
+  }
+  .header h1 {
+    font-size: 26px; 
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+  img.logo {
+    height: 75px;
+    margin-right: 0;
+  }
+  #outputMessage { 
+    font-size: 24px; 
+    margin: 20px 0;
+}
+#ticketResult { 
+  padding: 30px; 
+}
+div#ticketResult ul li { 
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+div#ticketResult ul { 
+  max-width: 100%; 
+  margin-bottom: 20px;
+}
+#ticketResult button {
+  font-size: 20px;
+  padding: 8px 25px; 
+} 
+#ticketResult {  
+  padding-top: 40px;
+}
+
+
+}

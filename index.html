@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="./css/style.css" rel="stylesheet"> 
+
+	<title>HITIX SCANNER</title>
+	
+</head>
+<body>
+
+	<main>
+		<div class="header"> 
+			<img src="./hitix400.png" class="logo" onclick="if (confirm('EventCode zurücksetzen?')) api('reset','true');">
+			<h1>EVENTCODE SCANNEN</h1>
+		</div>
+		<div id="loadingMessage">🎥 Zugriff auf Systemkamera benötigt (bitte freigeben)</div> 
+		<canvas id="canvas" hidden=""> </canvas>
+		<div id="outputMessage">warte auf EventCode</div> 
+		<div id="ticketResult">
+			<ul>
+				<li>1) EventCode aus HITIX scannen, oben erscheint Veranstaltungsname und -datum</li>
+				<li>2) Gerät ist jetzt einsatzbereit und kann Tickets prüfen. Dazu QR-Code (Kästchen mit Punkten) vor die Kamera halten.</li>
+				<li>3) Ist ein Ticket bereits gescannt worden, kann es (z.B. zum Verlassen des Saals) wieder freigegeben werden.</li> 
+			</ul> 
+			<button onclick="startScanning();">Scan starten</button>
+		</div>
+		<div id="eventInfo">...</div> 
+	</main>
+
+
+	<script src="./js/jsQR.js"></script>
+	<script src="./js/jquery.js"></script>
+	<script src="./js/main.js"></script>
+	<!--<script src="./jquery-navigator-vibrate.js"></script>-->  
+	<script>
+		var eventID=0;
+		var eventName="";
+		var eventDesc="";
+		
+		var lastCode=""; // to prevent double scanning
+		var lastMode=""; // to prevent double scanning
+		
+		var timeOutID="";
+		
+	</script>
+</body>
+</html> 
