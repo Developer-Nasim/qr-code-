@@ -22,6 +22,7 @@
     font-family: 'Ropa Sans', sans-serif;
     color: #333;
     position: relative;
+    background: #00CC65;
   }
   main{ 
     max-width: 1000px;
@@ -40,6 +41,31 @@
     display: block;
     list-style: none;
   }
+  h1 {
+    padding:0px;
+    margin:0px;
+    font-size:300%;
+}
+h2{
+  font-size:200%;
+    margin:0px;
+    padding:10px;
+    border:0px;
+}
+h3{
+  font-size:150%;
+  font-weight:bold;
+    padding:10px;
+    margin:0px;
+}	
+hr{
+    border:0px;
+}
+button{
+    font-size:150%;
+    width:100%;
+    background-color:#FFFF00;
+}
   #githubLink {
     position: absolute;
     right: 0;
@@ -58,11 +84,12 @@
     align-items: center;
     padding: 20px 0px;
 }
-  #canvas {
-    width: 100%;
-    height:40%; 
-  }
-
+#canvas {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
   #output {
     /*margin-top: 20px;*/
     background: #eee;
@@ -89,44 +116,20 @@
   #outputMessage {
     text-align: center;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 26px;
     text-transform: capitalize;
-    margin: 30px 0;
+    margin: 15px 0;
 }
-  #ticketResult {
-    background-color: #CCCCCC;
-    text-align: center;
-    padding: 40px;
-    padding-top: 50px;
-  }
+#ticketResult {
+  background-color: #00a964bf;
+  text-align: center;
+  padding: 20px;
+  padding-top: 35px;
+}
   #outputData{
   font-weight:bold;
   }
-  h1 {
-      padding:0px;
-      margin:0px;
-      font-size:300%;
-  }
-  h2{
-    font-size:200%;
-      margin:0px;
-      padding:10px;
-      border:0px;
-  }
-  h3{
-    font-size:150%;
-    font-weight:bold;
-      padding:10px;
-      margin:0px;
-  }	
-  hr{
-      border:0px;
-  }
-  button{
-      font-size:150%;
-      width:100%;
-      background-color:#FFFF00;
-  }
+
   #eventInfo{
       text-align:center;
       width:100%;
@@ -139,9 +142,9 @@
     margin-right: 80px;
   }
   .header h1 {
-    font-size: 38px;
+    font-size: 34px;
     margin: 0;
-    margin-bottom: -15px;
+    margin-bottom: -10px;
 }
   div#ticketResult ul {
     text-align: left;
@@ -150,58 +153,67 @@
     margin-bottom: 30px;
   }
   div#ticketResult ul li {
-      display: block;
-      margin-bottom: 25px;
-      font-size: 24px;
-  }
-  #ticketResult button {
-    font-size: 26px;
-    padding: 10px 40px;
-    width: max-content;
-    cursor: pointer;
-  }
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+#ticketResult button {
+  font-size: 18px;
+  padding: 7px 22px;
+  width: max-content;
+  cursor: pointer;
+}
 
 
 @media screen and (max-width:768px) {
   main { 
-    padding: 0 15px;
+    padding: 0 10px;
   } 
-  .header {
-    display: block;
-    text-align: center; 
-    padding: 20px 0px;
+  .header { 
+    padding: 10px 0px;
   }
   .header h1 {
-    font-size: 26px; 
+    font-size: 20px;
     margin-bottom: 0;
-    margin-top: 10px;
-  }
+    margin-top: 9px;
+}
   img.logo {
-    height: 75px;
-    margin-right: 0;
+    height: 55px;
+    margin-right: 20px;
   }
   #outputMessage { 
     font-size: 24px; 
-    margin: 20px 0;
+    margin: 10px 0;
 }
 #ticketResult { 
   padding: 30px; 
 }
-div#ticketResult ul li { 
-  margin-bottom: 15px;
-  font-size: 18px;
+div#ticketResult ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
 }
 div#ticketResult ul { 
   max-width: 100%; 
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+} 
+#ticketResult {
+  padding: 15px;
+}
+#canvas {
+  height: 180px;
 }
 #ticketResult button {
-  font-size: 20px;
-  padding: 8px 25px; 
-} 
-#ticketResult {  
-  padding-top: 40px;
+  font-size: 16px;
+  padding: 5px 25px;
 }
+
+
+
+
+
+
+
+
 
 
 }

@@ -9,6 +9,17 @@
 
 	<title>HITIX SCANNER</title>
 	
+	<script>
+		var eventID=0;
+		var eventName="";
+		var eventDesc="";
+		
+		var lastCode=""; // to prevent double scanning
+		var lastMode=""; // to prevent double scanning
+		
+		var timeOutID="";
+		
+	</script>
 </head>
 <body>
 
@@ -36,16 +47,5 @@
 	<script src="./js/jquery.js"></script>
 	<script src="./js/main.js"></script>
 	<!--<script src="./jquery-navigator-vibrate.js"></script>-->  
-	<script>
-		var eventID=0;
-		var eventName="";
-		var eventDesc="";
-		
-		var lastCode=""; // to prevent double scanning
-		var lastMode=""; // to prevent double scanning
-		
-		var timeOutID="";
-		
-	</script>
 </body>
 </html> 
