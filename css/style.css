@@ -125,6 +125,9 @@ button{
   text-align: center;
   padding: 20px;
   padding-top: 35px;
+  min-height: 150px;
+  max-height: 250px;
+  overflow: auto;
 }
   #outputData{
   font-weight:bold;
@@ -184,10 +187,7 @@ button{
   #outputMessage { 
     font-size: 24px; 
     margin: 10px 0;
-}
-#ticketResult { 
-  padding: 30px; 
-}
+} 
 div#ticketResult ul li {
   margin-bottom: 10px;
   font-size: 14px;
@@ -197,7 +197,9 @@ div#ticketResult ul {
   margin-bottom: 15px;
 } 
 #ticketResult {
-  padding: 15px;
+  padding: 13px;
+  min-height: 100px;
+  max-height: 200px;
 }
 #canvas {
   height: 180px;
@@ -205,8 +207,7 @@ div#ticketResult ul {
 #ticketResult button {
   font-size: 16px;
   padding: 5px 25px;
-}
-
+} 
 
 
 
